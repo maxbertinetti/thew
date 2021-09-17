@@ -4,11 +4,13 @@
   "description": "Hardhat + Ethers + Waffle sample project",
   "main": "",
   "scripts": {
+    "accounts": "npx hardhat accounts",
     "build": "npm run clean && npm run compile",
     "clean": "npx hardhat clean",
     "compile": "npx hardhat compile",
     "test": "npx hardhat test",
-    "coverage": "npm run build && npx hardhat coverage --temp artifacts --network coverage"
+    "coverage": "npm run build && npx hardhat coverage --temp artifacts --network coverage",
+    "deploy-test": "npx hardhat run --network rinkeby scripts/deploy.ts"
   },
   "author": "Massimiliano Bertinetti <max@eclecticlly.com>",
   "license": "MIT",
